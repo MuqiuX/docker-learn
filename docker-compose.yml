@@ -1,0 +1,10 @@
+services:
+  go-work:
+    image: golang:latest
+    container_name: go-work
+    volumes:
+      - .:/workspace
+    privileged: true
+    working_dir: /workspace
+    tty: true
+    stdin_open: true
